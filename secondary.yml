@@ -73,7 +73,7 @@
       tags: [ wordpress ]
       
     - name: Edit php post_max_size
-       ini_file:
+      ini_file:
           path: /etc/php/7.2/apache2/php.ini
           section: PHP
           option: post_max_size
