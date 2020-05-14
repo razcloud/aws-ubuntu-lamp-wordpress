@@ -2,7 +2,8 @@
 # DO Community Playbooks: Wordpress on Ubuntu 18.04 LAMP
 #########################################################
 ---
-- hosts: all
+- hosts: localhost
+  connection: local
   become: true
   vars_files:
     - vars/default.yml
