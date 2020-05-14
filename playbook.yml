@@ -105,6 +105,15 @@
         proto: tcp
       tags: [ system ]
 
+  # UFW Configuration
+    - name: "UFW - Allow HTTP on port {{ https_port }}"
+      ufw:
+        rule: allow
+        port: "{{ https_port }}"
+        proto: tcp
+      tags: [ system ]
+      
+
   # WordPress Configuration
     - name: Download and unpack latest WordPress
       unarchive:
@@ -124,7 +133,7 @@
       tags: [ wordpress ]
 
     - name: Set permissions for directories
-      shell: "/usr/bin/find /var/www/{{ http_host }}/wordpress/ -type d -exec chmod 750 {} \\;"
+      shell: "/usr/bin/find /var/www/{{ http_host }}/wordpress/ -type d -exec chmod 775 {} \\;"
       tags: [ wordpress ]
 
     - name: Set permissions for files
