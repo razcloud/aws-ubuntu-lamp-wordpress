@@ -21,14 +21,14 @@ Quickstart guide for those already familiar with Ansible:
 
 ### 1. Obtain the playbook
 ```shell
-git clone https://github.com/do-community/ansible-playbooks.git
-cd ansible-playbooks/wordpress-lamp_ubuntu1804
+Copy the install.sh file to the local server
+
 ```
 
 ### 2. Customize Options
 
 ```shell
-nano vars/default.yml
+vi vars/default.yml
 ```
 
 ```yml
@@ -47,10 +47,10 @@ http_host: "your_domain"
 http_conf: "your_domain.conf"
 http_port: "80"
 ```
+### 3. Run Install
 
-### 3. Run the Playbook
-
-```command
-ansible-playbook -l [target] -i [inventory file] -u [remote user] playbook.yml
+```shell
+chmod a+x install.sh
+./install.sh
 ```
 
