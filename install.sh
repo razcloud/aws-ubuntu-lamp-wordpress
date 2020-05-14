@@ -23,4 +23,4 @@ echo "TASK [Change to Project Directory]"
 cd aws-ubuntu-lamp-wordpress
 
 echo "TASK [Run Playbook]"
-sudo ansible-playbook raz-setup.yml -e 'ansible_python_interpreter=/usr/bin/python3'
+sudo ansible-playbook playbook.yml -e 'ansible_python_interpreter=/usr/bin/python3'
