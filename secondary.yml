@@ -7,6 +7,16 @@
 
   tasks:
   # Apache Configuration
+    # Apache Configuration
+    - name: Create document root
+      file:
+        path: "/var/www/{{ http_host }}"
+        state: directory
+        owner: "www-data"
+        group: "www-data"
+        mode: '0755'
+      tags: [ apache ]
+      
     - name: Set up Apache VirtualHost
       template:
         src: "files/apache.conf.j2"
