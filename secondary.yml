@@ -6,7 +6,6 @@
     - vars/default.yml
 
   tasks:
-  # Apache Configuration
     # Apache Configuration
     - name: Create document root
       file:
