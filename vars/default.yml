@@ -4,12 +4,12 @@ php_modules: [ 'php-curl', 'php-gd', 'php-mbstring', 'php-xml', 'php-xmlrpc', 'p
 
 #MySQL Settings
 mysql_root_password: "djibout7"
-mysql_db: "dev_missioncit"
-mysql_user: "dev_missioncit"
+mysql_db: "stg_missioncit"
+mysql_user: "stg_missioncit"
 mysql_password: "djibout7"
 
 #HTTP Settings
-http_host: "dev.missioncit.com"
-http_conf: "dev.missioncit.com.conf"
+http_host: "stg.missioncit.com"
+http_conf: "stg.missioncit.com.conf"
 http_port: "80"
 https_port: "443"
