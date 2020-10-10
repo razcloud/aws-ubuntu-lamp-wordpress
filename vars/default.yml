@@ -3,13 +3,13 @@
 php_modules: [ 'php-curl', 'php-gd', 'php-mbstring', 'php-xml', 'php-xmlrpc', 'php-soap', 'php-intl', 'php-zip', 'php-imagick' ]
 
 #MySQL Settings
-mysql_root_password: "djibout7"
-mysql_db: "stg_missioncit"
-mysql_user: "stg_missioncit"
-mysql_password: "djibout7"
+mysql_root_password: "mysql_root_password"
+mysql_db: "wordpress"
+mysql_user: "sammy"
+mysql_password: "password"
 
 #HTTP Settings
-http_host: "stg.missioncit.com"
-http_conf: "stg.missioncit.com.conf"
+http_host: "your_domain"
+http_conf: "your_domain.conf"
 http_port: "80"
 https_port: "443"
